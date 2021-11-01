@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us{% endblock title %}
+{% block body %}
+<div class="container">
+<h1 class="text-center"style="padding-top:3em">Contact Us</h1>
+<form method="POST" action="/contact" >
+{% csrf_token %}    
+<div class="form-group">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+<div class="form-group">
+  <label for="email" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email">
+</div>
+<div class="mb-3">
+  <label for="desc" class="form-label">Reason for Contacting</label>
+  <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Enter the text here "></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock body %}
