@@ -10,13 +10,15 @@ def mentalhealth(request):
 def findnearby(request):
     return render(request, 'findnearby.html')
 def miniblogs(request):
-    return render(request, 'miniblogs.html')
+    return render(request, 'blogshome.html')
 def organisations(request):
     return render(request, 'organisations.html')
 def definitions(request):
     return render(request, 'definitions.html')
 def pridesection(request):
     return render(request, 'pridesection.html')
+def blogshome(request):
+    return render(request, 'blogshome.html')    
 def contact(request):
     if request.method == "POST":
         name = request.POST.get('name')
