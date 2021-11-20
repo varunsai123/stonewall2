@@ -20,8 +20,8 @@ from django.urls import path, include
 admin.site.site_header = "Stonewall Admin"
 admin.site.site_title = "Stonewall Admin Portal"
 admin.site.index_title = "Welcome to Stonewall Researcher Portal"
-
+  
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('stonewall.urls'))
+    path('', include('stonewall.urls')),
 ]

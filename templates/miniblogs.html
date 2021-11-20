@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from demo.bootstrapious.com/directory/1-6-1/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Apr 2021 09:21:30 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
      
       <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
         <div class="container-fluid">
-          <div class="d-flex align-items-center"><a class="navbar-brand py-1" href="/">
+          <div class="d-flex align-items-center"><a class="navbar-brand py-1" href="/blogshome">
           <h3>Blog</h3>
           </div>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -44,15 +44,15 @@
               
               {% if request.user.is_authenticated %}
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
-                <a class="btn btn-info" href="#">Add Blogs</a>
+                <a class="btn btn-info" href="{% url 'addblog'%}">Add Blogs</a>
               </li>
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
-                <a class="btn btn-danger" href="#">Report Blog</a>
+                <a class="btn btn-danger" href="{% url 'login'%}">Logout</a>
               </li>
 
               {% else %}
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
-                <a class="btn btn-primary" href="#">Add Blog</a>
+                <a class="btn btn-primary" href="{% url 'login'%}">Add Blog</a>
               </li>
 
               {% endif %}
