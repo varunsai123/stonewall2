@@ -43,9 +43,13 @@
             <ul class="navbar-nav ml-auto">
               
               {% if request.user.is_authenticated %}
+              </li>
+               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
+                <a class="btn btn-success" href="/">Home</a>
+              </li>
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
                 <a class="btn btn-info" href="{% url 'addblog'%}">Add Blogs</a>
-              </li>
+              
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
                 <a class="btn btn-danger" href="{% url 'login'%}">Logout</a>
               </li>
@@ -77,7 +81,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-left">
-              <p class="text-sm mb-md-0">&copy; 2020, Your company.  All rights reserved.</p>
+              <p class="text-sm mb-md-0">&copy; 2021, Stonewall.  All rights reserved.</p>
             </div>
            
           </div>
