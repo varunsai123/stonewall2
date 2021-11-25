@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0cclmz51w^k4abrhs!ws*&3b%bz0ta9qx=xd$q$ie(ie@9al$p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['stonewall2.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

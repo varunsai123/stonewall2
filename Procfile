@@ -1,0 +1,1 @@
+web: gunicorn Stonewall2.wsgi --log-file -
